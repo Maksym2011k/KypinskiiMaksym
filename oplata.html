@@ -1,0 +1,61 @@
+<html>
+<head>
+  <title>Оплата</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #333333;
+    }
+    
+    form {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      width: 300px;
+      margin: 0 auto;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"],
+    input[type="submit"] {
+      padding: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1 align="center">Оплата</h1>
+  
+  <form action="https://example.com/payment" method="post">
+    <label for="cardNumber">Номер картки:</label>
+    <input type="text" id="cardNumber" name="cardNumber" required><br><br>
+    
+    <label for="expiryDate">Термін дії:</label>
+    <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required><br><br>
+    
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" required><br><br>
+    
+    <input type="submit" value="Оплатити">
+  </form>
+</body>
+</html>
